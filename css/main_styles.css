@@ -1,0 +1,111 @@
+/*Global and container*/
+html, body{
+    height: 100%; width: 100%;
+}
+body, .container-grid {
+    background-color: #FFFFFF;
+    font-family: monospace, sans-serif, Helvetica, Arial;
+}
+.container-grid {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-gap: 5px;
+}
+.container-item{
+    background-color: #E9EBFF;
+}
+li {
+    padding: 1rem;
+    transition: all 300ms ease-in-out;
+    float:left;
+    list-style-type: none;
+    list-style-position: outside;
+    clear: both;
+    width: 100%;
+}
+li:hover {
+    background-color: #E3E7FF;
+}
+a:hover, li:hover {
+    cursor: pointer;
+}
+
+/*Header*/
+.header-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: .2em;
+}
+.header-item, .top, .connect {
+    position: relative;
+    display: grid;
+    width: 100%; height: 100%;
+    background-color: #FDFFFC;
+    transition: all 300ms ease-in-out;
+}
+.header-item:hover{
+    background-color: #E3E7FF;
+}
+.header-item span, .top span, .connect span {
+    display: inline-block;
+    text-align: center;
+    margin: auto;   
+}
+.header-item a, .top a, .connect a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*Putting logo top and cetering logo*/
+.top {
+    grid-column: 2/ span 4;
+    grid-row: 1/ span 2;
+    padding-bottom: .1em;
+    border-bottom: 1px solid #000000;
+}
+#logo {
+    vertical-align: middle;
+    margin: 5% 25%;
+    width: 405px; height: 100px;
+    background: url("../images/generic-logo.svg") no-repeat ;
+    background-size: cover;
+}
+#logo:hover {
+    cursor: pointer;
+}
+
+/*Facebook and Instagram button*/
+.connect {
+    grid-column: 6;
+}
+
+/*Spacing home tab*/
+#home {
+    grid-column: 2;
+}
+/*Header dropdown items*/
+.header-dropdown ul{
+    display: none;
+    visibility:hidden;
+    opacity: 0;
+    
+    background-color: #FDFFFC;
+    position: absolute;
+    transition: all 300ms ease-in-out;
+    margin-top: 6em;
+    padding: 0 2em 0 2em;
+    list-style: none;
+    z-index: 0;
+    border: 1px solid #000;
+    float: left;
+}
+.header-dropdown:focus-within ul, .header-dropdown:hover ul{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+   
+}
+.header-dropdown ul li{
+    
+}
