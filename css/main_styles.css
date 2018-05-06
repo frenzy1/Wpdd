@@ -17,7 +17,9 @@ body, .container{
     padding: 0;
 }
 .container {
+	height: 100%; width: 100%;
     grid-template-rows: 1fr 1fr 3fr 1fr;
+	-ms-grid-template-rows: 1fr 1fr 3fr 1fr;
 }
 
 
@@ -30,6 +32,7 @@ body, .container{
 header {
     display: grid;
     grid-template-rows: 2fr 1fr 1fr;
+	-ms-grid-template-rows: 2fr 1fr 1fr;
     column-gap: .5em;    
     margin: 0; padding: 0;
 }
@@ -50,7 +53,7 @@ header div {
 }
 .icon:focus, .icon:hover {
     box-shadow: 0 10px 10px -10px #000;
-    transform: translate(0, -1px);
+    transform: translate(0, -3px);
 }
 .sexy-line { 
     margin: 0px 0;
@@ -69,6 +72,7 @@ nav {
 nav > ul{
     display: grid;
     grid-template-columns: 1fr;
+	-ms-grid-template-columns: 1fr;
     padding: 0;
     list-style: none;
     background: var(--light);
@@ -92,7 +96,7 @@ main {
     margin:0 2em;
 }
 main {
-    display: grid;
+    display: flex;
 }
 
 /*Footer*/
@@ -101,6 +105,7 @@ footer {
     bottom: 0;
     display: grid;
     grid-template-rows: auto auto;
+	-ms-grid-template-rows: auto auto;
     width: 100%;
     height: 200px;
 }
@@ -148,16 +153,21 @@ footer ul li a:focus, footer ul li a:hover {
     }
     header {
         grid-template-rows: 1fr;
+		-ms-grid-template-rows: 1fr;
         grid-template-columns: 3fr 8fr 1fr 1fr;
+		-ms-grid-template-columns: 3fr 8fr 1fr 1fr;
     }
     #logo-wrapper {
         grid-column: 2/ 3;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
     }
     .icon {
         margin: 1em 0 0 0; padding: 0;
     }
     nav > ul {
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(4, 1fr);
+		-ms-grid-template-columns: 1fr 1fr 1fr 1fr;
     } 
     footer {
         height: 75px;
