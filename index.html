@@ -7,58 +7,40 @@
     <link rel="stylesheet" type="text/css" href="css/main_styles.css">
 </head>
 <body>
-    <div class="container-grid">
-        <!--This is the header-->
-        <div class="header-grid container-item">
-            <div class="top"><span id="logo"></span></div>
-            
-            <div class="connect">
-                <span id="facebook"><a href="#facebook" target="_blank">Facebook</a></span>
-                <span id="insta"><a href="#instagram" target="_blank">Instagram</a></span>
-            </div><!--Facebook button-->
-            
-            <div class="header-item current-page" id="home"><span><a href="#Home" target= "_self">Home</a></span></div>
-            
-            <div class="header-item"><span><a href="#about_us" target="_self">About Us</a></span></div>
-            
-            <div class="header-item header-dropdown">
-                <span><a href="#services" target="_self">Services</a></span>
+    <div class="container">
+        <div class="top-wrapper">
+            <header id="top">
+                <div id="logo-wrapper"><a href="#top" target="_self"><img id="logo" src="images/generic-logo.svg" alt="Logo"></a></div>
+                <div><a href="#facebook" target="_blank"><img  class="icon" src="images/facebook.png" alt="Facebook"></a></div>
+                <div><a href="#insta" target="_blank"><img  class="icon" src="images/instagram.png" alt="Instagram"></a></div>
+            </header>
+            <hr class="sexy-line"/>
+            <nav>
                 <ul>
-                    <li><a href="#places" target="_self">Places to go</a></li>
-                    <li><a href="#things" target="_self">Things to do</a></li>
+                    <li><a href="#Home" target="_self">Home</a></li>
+                    <li><a href="#About" target="_self">About Us</a></li>
+                    <li><a href="#Services" target="_self">Services</a></li>
+                    <li><a href="#Bookings" target="_self">Bookings</a></li>
                 </ul>
-            </div>
-            
-            <div class="header-item header-dropdown">
-                <span><a href="#bookings" target="_self">Bookings</a></span>    
-                <ul>
-                    <li><a href="#accomodation" target="_self">Accomodations</a></li>
-                    <li><a href="#tours" target="_self">Tours</a></li>
-                    <li><a href="#special" target="_self">Special deals & offers</a></li>
-                </ul>
-            </div>
+            </nav>
         </div>
-        <!--This is the main-->
-        <div class="main container-item">
-        
-        </div>
-        <!--This is the footer-->
-        <div class="footer-grid container-item">
-            <div class="footer-item footer-dropdown">
-                <ul>
-                    <li><a href="#contact" target="_blank">Contact</a></li>
-                    <li>Email:<a href="mailto:someone@xxx.com"></a></li>
-                    <li>Phone:<a href="tel:+61123456789">123456789</a></li>
-                </ul>
-            </div>    
-            
-            <div class="footer-item footer-dropdown">
-                <ul>
-                    <li><a href="#references" target="_blank">References</a></li>
-                    <li>&copy;Phung Nguyen</li>
-                </ul>
-            </div>
-        </div>
+        <main>
+            <section>
+                <p>Bendigo Tours &amp; Travel is one of the leading tour operators in Australia, providing comprehensive services for groups and individuals from and to the country.</p>
+            </section>
+        </main>
+        <footer>
+            <ul class="contact">
+                <li><a id="contact-us" href="#contact" target="_blank">CONTACT US</a></li>
+                <li><a href="mailto:somewhere@avc.com" target="_self">somewhere@avc.com</a></li>
+                <li><a href="tel:+613123140" target="_self">+613123140</a></li>
+                <li><a href="#top" target="_self"><img src="images/generic-logo.svg" alt="Logo"></a></li>
+            </ul>
+            <ul id="references">
+                <li><a href="#references" target="_blank">References</a></li>
+                <li style="color: rgba(255, 255, 255, .2)">&copy; Phung Nguyen</li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>
