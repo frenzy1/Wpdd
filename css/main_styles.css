@@ -96,19 +96,40 @@ nav ul li > ul {
 
 /*Main*/
 main {
+	display: flex;
+	flex-flow: column nowrap;
     margin:0; padding: 0;
-	height: 500px;
-	grid-rows: 50%;
-	background: url("../images/plane.jpg") no-repeat;
-	background-size: cover;
+	height: 100%;
+	overflow-y: auto;
+	max-width: 100%;
+	grid-rows: 50%;	
+}
+main aside {
+	background: #f2f2f2;
+	box-shadow: 0 5px 10px -5px #000;
+}
+main aside a {
+	text-decoration: none;
+	color: var(--dark);
+	transition: all 150ms ease-in-out;
+}
+main aside a:hover {
+	color: var(--highlight);
+}
+main aside ul {
+	list-style: none;
+	padding: 0;
+}
+main aside ul li {
+	text-align: center;
 }
 main section {
-	
+	height: 500px;
+	width: 100%;
 	margin: 0 2em;
-	color: var(--light);
+	color: var(--dark);
 	font-weight: 200;
 	font-size: 1.5em;
-	
 }
 
 /*Footer*/
@@ -195,6 +216,11 @@ footer ul li a:focus, footer ul li a:hover {
 	nav ul li:hover ul {
 		display: flex; visibility: visible; opacity: 1;
 		flex-flow: column wrap;
+	}
+	main aside {
+		display: none;
+		visibility: hidden;
+		opacity: 0;
 	}
     footer {
         height: 100%;
