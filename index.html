@@ -6,38 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="images/logo-icon.png"/>
     <link rel="stylesheet" type="text/css" href="css/main_styles.css">
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto Condensed'>
 </head>
 <body>
     <div class="container" id="top">
         <div class="top-wrapper" >
             <header>
+				<div class="buffer"></div>
+				<div class="buffer"></div>
                 <div id="logo-wrapper"><a href="#top" target="_self"><img id="logo" src="images/generic-logo.svg" alt="Logo"></a></div>
                 <div><a href="#facebook" target="_blank"><img  class="icon" src="images/facebook.png" alt="Facebook"></a></div>
-                <div><a href="#insta" target="_blank"><img  class="icon" src="images/instagram.png" alt="Instagram"></a></div>
+				<div>
+					<a href="#insta" target="_blank"><img  class="icon" src="images/instagram.png" alt="Instagram"></a>
+					<svg onclick="menuButton()" width="5em" height="3em">
+						<rect x="2.5em" y=".5em" rx="6px" ry="6px" width="2.5em" height=".5em"></rect>
+						<rect x="2.5em" y="2em" rx="6px" ry="6px" width="2.5em" height=".5em"></rect>
+						<rect x="2.5em" y="1.25em" rx="6px" ry="6px" width="2.5em" height=".5em"></rect>
+					</svg>
+				</div>
             </header>
             <hr class="sexy-line"/>
-            <nav>
-                <ul>
+            <nav id="menu">
+                <ul> <!--This is hidden on phone screen-->
                     <li><a href="index.html" target="_self">Home</a></li>
                     <li><a href="#About" target="_self">About Us</a></li>
-                    <li>
-						<a href="#Services" target="_self">Services</a>
-						<ul>
-							<li><a href="#Services" target="_self">Services</a></li>
-							<li><a href="#Services" target="_self">dfasdf</a></li>
-							<li><a href="#Services" target="_self">Sewre</a></li>
-						</ul>
-					</li>
+                    <li><a href="#Services" target="_self">Services</a></li>
                     <li><a href="#Bookings" target="_self">Bookings</a></li>
 					<li><a href="#contact" target="_blank">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
-        <main>
-		<hr class="sexy-line"/>
-		<aside>
-			<ul> <!--This is hidden on the big screen-->
+		<!--<aside>
+			<ul> <!--This is hidden on the big screen
 				<li style="font-weight: 500; text-transform: uppercase">Content</li>
 				<li><a href="#Home" target="_self">Page 1</a></li>
 				<li><a href="#Page2" target="_self">Page 2</a></li>
@@ -51,11 +50,71 @@
 				<li><a href="#Page10" target="_self">Page 10</a></li>
 				<li><a href="#Page11" target="_self">Page 11</a></li>
 			</ul>
-		</aside>
-		<section>
-			<p>asdfasdfklasdjfklsadasdfsadgsdfaefsdafwhbfnvjlkasdjfklsadnvjlaskdfjlskdjflskdjfslkdjflskjflkjslkdjflksadjfklsadjflkasjfklajsdflkjaiewouqiruiqowruioqtuioerqtjqtlkjqwelkrjwelkrjf</p>
+		</aside>-->
+        <main>
+		
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Aliquam fermentum semper risus et viverra. 
+			Ut malesuada elit et ante fermentum, non laoreet libero aliquam. 
+			Quisque auctor est ante, eget placerat metus lobortis sit amet. 
+			Praesent posuere nisl in hendrerit fringilla. 
+			Aenean ac ante vitae nisl fringilla commodo non sit amet erat. 
+			Nunc ut enim ultrices, vestibulum massa id, imperdiet ex. 
+			Cras tincidunt quis augue quis pulvinar. 
+			Nullam feugiat ac sapien eu rhoncus. 
+			Etiam ut sodales sapien, vitae bibendum ex.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Aliquam fermentum semper risus et viverra. 
+			Ut malesuada elit et ante fermentum, non laoreet libero aliquam. 
+			Quisque auctor est ante, eget placerat metus lobortis sit amet. 
+			Praesent posuere nisl in hendrerit fringilla. 
+			Aenean ac ante vitae nisl fringilla commodo non sit amet erat. 
+			Nunc ut enim ultrices, vestibulum massa id, imperdiet ex. 
+			Cras tincidunt quis augue quis pulvinar. 
+			Nullam feugiat ac sapien eu rhoncus. 
+			Etiam ut sodales sapien, vitae bibendum ex.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Aliquam fermentum semper risus et viverra. 
+			Ut malesuada elit et ante fermentum, non laoreet libero aliquam. 
+			Quisque auctor est ante, eget placerat metus lobortis sit amet. 
+			Praesent posuere nisl in hendrerit fringilla. 
+			Aenean ac ante vitae nisl fringilla commodo non sit amet erat. 
+			Nunc ut enim ultrices, vestibulum massa id, imperdiet ex. 
+			Cras tincidunt quis augue quis pulvinar. 
+			Nullam feugiat ac sapien eu rhoncus. 
+			Etiam ut sodales sapien, vitae bibendum ex.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Aliquam fermentum semper risus et viverra. 
+			Ut malesuada elit et ante fermentum, non laoreet libero aliquam. 
+			Quisque auctor est ante, eget placerat metus lobortis sit amet. 
+			Praesent posuere nisl in hendrerit fringilla. 
+			Aenean ac ante vitae nisl fringilla commodo non sit amet erat. 
+			Nunc ut enim ultrices, vestibulum massa id, imperdiet ex. 
+			Cras tincidunt quis augue quis pulvinar. 
+			Nullam feugiat ac sapien eu rhoncus. 
+			Etiam ut sodales sapien, vitae bibendum ex.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Aliquam fermentum semper risus et viverra. 
+			Ut malesuada elit et ante fermentum, non laoreet libero aliquam. 
+			Quisque auctor est ante, eget placerat metus lobortis sit amet. 
+			Praesent posuere nisl in hendrerit fringilla. 
+			Aenean ac ante vitae nisl fringilla commodo non sit amet erat. 
+			Nunc ut enim ultrices, vestibulum massa id, imperdiet ex. 
+			Cras tincidunt quis augue quis pulvinar. 
+			Nullam feugiat ac sapien eu rhoncus. 
+			Etiam ut sodales sapien, vitae bibendum ex.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Aliquam fermentum semper risus et viverra. 
+			Ut malesuada elit et ante fermentum, non laoreet libero aliquam. 
+			Quisque auctor est ante, eget placerat metus lobortis sit amet. 
+			Praesent posuere nisl in hendrerit fringilla. 
+			Aenean ac ante vitae nisl fringilla commodo non sit amet erat. 
+			Nunc ut enim ultrices, vestibulum massa id, imperdiet ex. 
+			Cras tincidunt quis augue quis pulvinar. 
+			Nullam feugiat ac sapien eu rhoncus. 
+			Etiam ut sodales sapien, vitae bibendum ex.</p>
 			<!--THIS IS THE BODY, PUT THE CONTENT HERE.-->
-		</section>
+		
         </main>
         <footer>
             <ul class="content"> <!--This is hidden on phone-->
@@ -80,5 +139,6 @@
             </ul>
         </footer>
     </div>
+	<script src="javascript/main_script.js"></script>
 </body>
 </html>
