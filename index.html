@@ -12,16 +12,67 @@
 			font-size: 1.2em;
 		}
 		#welcome {
-			font-family: "Lucida Handwriting";
-			text-align: center;
-			background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/welcome.jpg") no-repeat;
+			color: #FFFFFF;			
+			background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/welcome2.jpg") no-repeat;
 			background-size: cover;
-			height: 100%;
-			color: #989FFF;
+			height: 100%;	
+			padding: 0 8vw 4em 8vw;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+			display: flex;
+			flex-flow: column nowrap;
 		}
 		#welcome h1 {
-			margin-top: 0; padding-top: 2em;
+			text-align: center;
+			margin-top: 0; padding-top: 1em;
+			font-family: "Lucida Handwriting";
 		}
+		#welcome ul {
+			color: #EEEEEE;
+			list-style:none;
+			text-align: center;
+		}
+		.red-button {
+			background-color: transparent;
+			color: #FEFEFE;
+			text-transform: uppercase;		
+			padding: .25em .5em;
+			margin: 10em 0;
+			border-radius: 10px;
+			text-decoration: none;
+			transition: all 100ms ease-in-out;
+			border: 1px solid #FFFFFF;
+			z-index: 0;
+		}
+		.red-button:hover {
+			background-color: #FF3827;
+		}
+		#welcome-icon {
+			margin: 0;	
+			max-height: 450px;
+		}
+		#welcome-icon ul{
+			text-align: justify;
+			list-style: none;
+			max-width: 80%;
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+			margin: auto;
+		}
+		#welcome-icon ul li {
+			border: 3px solid #000;
+			max-width: 407px; max-height: 270px;
+			margin: 1em;
+		}
+		#welcome-icon ul li p {
+			width: 100%;
+		}
+		#welcome-icon img {
+			margin-left: 7em;
+			max-width: 75px;
+			
+		}
+		
 	</style>
 </head>
 <body>
@@ -54,8 +105,22 @@
         </div>
         <main>
 			<div id="welcome">
-				<h1>Welcome to Bendigo Tours &amp; Travel.</h1>
-				<p>We are one of the leading tour operators in Australia, providing comprehensive services for groups and individuals from and to the country.</p>
+				<h1 style="text-transform: uppercase">Bendigo Tours &amp; Travel.</h1>
+				<ul>
+					<li><h2>One of the leading tour operators in Australia.</h2></li>
+					<li><h2>Providing comprehensive services for groups and individuals.</h2></li>
+					<li><h2>More than 20 years in the tourism industry.</h2></li>
+					<li style="margin-top: 3em"><a class="red-button" href="bookings.html" width="7em">Book now</a></li>
+				</ul>
+			</div>
+			<hr class="sexy-line"/>
+			<div id="welcome-icon">
+				<ul>
+					<li><img src="images/welcome-icon/guide.png"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>				
+					<li><img src="images/welcome-icon/transportation.png"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
+					<li><img src="images/welcome-icon/hotel.png"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
+					<li><img src="images/welcome-icon/restaurant.png"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
+				</ul>
 			</div>
 			<!--THIS IS THE BODY, PUT THE CONTENT HERE., any CSS to the body should be done in an
 			internal stylesheet to avoid bugs lol.-->
@@ -64,19 +129,19 @@
         <footer>
             <ul class="content"> <!--This is hidden on phone-->
                 <li style="font-weight: 500; font-size: 1.5em; text-transform: uppercase">Content</li>
-		<li><a href="#Home" target="_self">Page 1</a></li>
-		<li><a href="#Page2" target="_self">Page 2</a></li>
-		<li><a href="#Page3" target="_self">Page 3</a></li>
-		<li><a href="#Page4" target="_self">Page 4</a></li>
-		<li><a href="#Page5" target="_self">Page 5</a></li>
-		<li><a href="#Page6" target="_self">Page 6</a></li>
-		<li><a href="#Page7" target="_self">Page 7</a></li>
-		<li><a href="#Page8" target="_self">Page 8</a></li>
-		<li><a href="#Page9" target="_self">Page 9</a></li>
-		<li><a href="#Page10" target="_self">Page 10</a></li>
-		<li><a href="#Page11" target="_self">Page 11</a></li>
+				<li><a href="#Home" target="_self">Page 1</a></li>
+				<li><a href="#Page2" target="_self">Page 2</a></li>
+				<li><a href="#Page3" target="_self">Page 3</a></li>
+				<li><a href="#Page4" target="_self">Page 4</a></li>
+				<li><a href="#Page5" target="_self">Page 5</a></li>
+				<li><a href="#Page6" target="_self">Page 6</a></li>
+				<li><a href="#Page7" target="_self">Page 7</a></li>
+				<li><a href="#Page8" target="_self">Page 8</a></li>
+				<li><a href="#Page9" target="_self">Page 9</a></li>
+				<li><a href="#Page10" target="_self">Page 10</a></li>
+				<li><a href="#Page11" target="_self">Page 11</a></li>
                 <li><a href="#top" target="_self"><img src="images/generic-logo.svg" alt="Logo"></a></li>
-		<li><a href="qualified.html" target="_blank"><img src="./images/w3c.png" alt="W3C"></a></li>
+				<li><a href="qualified.html" target="_blank"><img src="./images/w3c.png" alt="W3C"></a></li>
             </ul>
             <ul id="references">
                 <li><a href="references.html" target="_blank">References</a></li>

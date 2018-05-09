@@ -24,10 +24,11 @@ body, .container{
 .top-wrapper {
     top: 0px;
 	position: sticky;
-    background-color: #fff;
+    background-color: #FFFFFF;
     box-shadow: 0 5px 10px -5px #000;
 	display: flex;
 	flex-flow: column nowrap;
+	z-index: 10;
 }
 
 /*Header*/
@@ -121,12 +122,11 @@ nav ul li > ul {
 
 /*Main*/
 main {
-	max-width: 100%;
+	max-width: 100%; max-height: 100%;
 	margin: 0;
 	color: var(--dark);
 	font-weight: 200;
 	font-size: 1.5em;
-	overflow: auto;
 }
 
 
@@ -220,7 +220,7 @@ footer ul li a:focus, footer ul li a:hover {
 	}
     footer {
         height: 100%;
-		position:sticky;
+		position: fixed;
 		bottom: 0;
     }
     footer .content {
