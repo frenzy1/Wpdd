@@ -1,6 +1,19 @@
-function menuButton() {
-	let menu = document.getElementById("menu");
-	if (menu.style.display === "flex") {
+let menu = document.getElementById("menu");
+
+function menuButton() {	
+	if (menu.style.display === "block") {
 		menu.style.display = "none";
-	} else {menu.style.display = "flex"}
+	} else {menu.style.display = "block"}
 }
+
+function getWidth(x) {
+	if (x.matches) {
+		menu.style.display = "block"
+	} else {menu.style.display = "none"}
+	console.log(x.matches)
+}
+
+
+let widthCheck = window.matchMedia("(min-width: 700px)"); 
+getWidth(widthCheck);
+widthCheck.addListener(getWidth);

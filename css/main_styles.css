@@ -6,7 +6,7 @@
     --highlight: #FDCC57;
 }
 /*Global*/
-*, html {
+html {
     box-sizing: border-box;
     font-family: "Roboto Condensed", monospace, Helvetica, Arial, sans-serif;
 }
@@ -26,6 +26,8 @@ body, .container{
 	position: sticky;
     background-color: #fff;
     box-shadow: 0 5px 10px -5px #000;
+	display: flex;
+	flex-flow: column nowrap;
 }
 
 /*Header*/
@@ -94,7 +96,7 @@ nav {
 nav a {
     text-decoration: none;
     color: #FFFFFF;
-    transition: all 300ms ease-in-out;
+    transition: all 150ms ease-in-out;
 	
 }
 nav > ul{
@@ -120,13 +122,13 @@ nav ul li > ul {
 /*Main*/
 main {
 	max-width: 100%;
-	grid-rows: 50%;	
-	margin: 0 2em;
+	margin: 0;
 	color: var(--dark);
 	font-weight: 200;
 	font-size: 1.5em;
 	overflow: auto;
 }
+
 
 /*Footer*/
 footer {
@@ -191,7 +193,7 @@ footer ul li a:focus, footer ul li a:hover {
 		display: block;
 	}
 	#logo {
-		width: 8em;
+		width: 5em;
 		margin: auto
 	}
     .icon {
@@ -202,6 +204,7 @@ footer ul li a:focus, footer ul li a:hover {
 		display: block;
 		background: #FFFFFF;
 		color: var(--dark)
+		vertical-align: middle;
 	}
 	nav a{
 		color: var(--dark)
@@ -222,7 +225,7 @@ footer ul li a:focus, footer ul li a:hover {
     }
     footer .content {
         flex-wrap: wrap;
-        max-height: 100px;
+        max-height: 60px;
     }
 	.content {
 		background-color: var(--dark);
@@ -246,6 +249,6 @@ footer ul li a:focus, footer ul li a:hover {
 		margin: 0 5em;
 	}
 	nav > ul{
-		margin: 1em 5em 0 5em;
+		margin: 0 5em 0 5em;
 	}
 }
