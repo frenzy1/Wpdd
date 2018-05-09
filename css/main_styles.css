@@ -60,7 +60,7 @@ header div svg:hover, header div svg:focus {
 	float: left;
 }
 #logo {
-    width: 5em;
+    width: 3em;
 	padding: 0em .5em;
 }
 .icon {
@@ -127,6 +127,9 @@ main {
 	color: var(--dark);
 	font-weight: 200;
 	font-size: 1.5em;
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
 }
 
 
@@ -134,9 +137,9 @@ main {
 footer {
     display: grid;
     grid-template-rows: auto auto auto;
-	-ms-grid-template-rows: auto auto;
     width: 100%;
     height: 200px;
+   
 }
 footer ul {
     display: flex;
@@ -170,10 +173,6 @@ footer ul li a:focus, footer ul li a:hover {
 #references {
     background-color: #1E1D1F;
     color: rgba(255, 255, 255, .8);   
-}
-#references li {
-	position: sticky;
-    bottom: 0;
 }
 /*Media Queries*/
 @media only screen and (min-width: 700px) {
@@ -220,7 +219,7 @@ footer ul li a:focus, footer ul li a:hover {
 	}
     footer {
         height: 100%;
-		position: fixed;
+		position: sticky;
 		bottom: 0;
     }
     footer .content {

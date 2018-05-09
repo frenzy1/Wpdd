@@ -11,6 +11,41 @@
 			color: #e94e1b;
 			font-size: 1.2em;
 		}
+        main > p {
+            font-style: oblique; 
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        
+        .button {
+			background-color: transparent;		
+			text-decoration: none;
+			transition: all 150ms ease-in-out;		
+            text-transform: uppercase;	
+		}
+        .red {
+            border-radius: 10px;
+            padding: .25em .5em;
+			margin: 10em 0;
+            color: #FEFEFE;
+            border: 1px solid #FFFFFF;		
+        }
+		.red:hover, .red:focus {
+			background-color: #FF131A;
+            border: none;
+		}
+        .blue {
+            border: 2px solid #000;
+            border-radius: 30px;
+            font-weight: 300;
+            padding: 1em .5em;
+            color: #0d1a2b;
+        }
+        .blue:hover, .blue:focus {
+            background-color: #5cadd6;
+            border: 2px solid #FEFEFE;
+            color: #FEFEFE;
+        }
 		#welcome {
 			color: #FFFFFF;			
 			background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/welcome2.jpg") no-repeat;
@@ -30,49 +65,41 @@
 			color: #EEEEEE;
 			list-style:none;
 			text-align: center;
-		}
-		.red-button {
-			background-color: transparent;
-			color: #FEFEFE;
-			text-transform: uppercase;		
-			padding: .25em .5em;
-			margin: 10em 0;
-			border-radius: 10px;
-			text-decoration: none;
-			transition: all 100ms ease-in-out;
-			border: 1px solid #FFFFFF;
-			z-index: 0;
-		}
-		.red-button:hover {
-			background-color: #FF3827;
+            padding: 0;
 		}
 		#welcome-icon {
 			margin: 0;	
-			max-height: 450px;
+            height: 100%;
 		}
 		#welcome-icon ul{
-			text-align: justify;
+			text-align: center;
 			list-style: none;
-			max-width: 80%;
-			display: flex;
-			flex-flow: column wrap;
-			justify-content: center;
-			margin: auto;
+            padding: 0; margin: auto;
+            display: flex;
+            flex-flow: row wrap;    
+            justify-content: space-evenly;
 		}
 		#welcome-icon ul li {
 			border: 3px solid #000;
-			max-width: 407px; max-height: 270px;
-			margin: 1em;
+            border-radius: 10px;
+			max-width: 407px;
+			margin: 1em;     
 		}
 		#welcome-icon ul li p {
 			width: 100%;
+            color: #0d1a2b;
 		}
+        .icon-wrapper {
+            margin: .75em auto auto;
+            width: 120px; height: 120px;
+            background-color: #5cadd6;
+            border-radius: 50%;
+        }
 		#welcome-icon img {
-			margin-left: 7em;
-			max-width: 75px;
-			
+			margin-left: 0em;
+            margin-top: .75em;
+			width: 75px; height: 75px;
 		}
-		
 	</style>
 </head>
 <body>
@@ -82,13 +109,13 @@
 				<div class="buffer"></div>
 				<div class="buffer"></div>
                 <div id="logo-wrapper"><a href="#top" target="_self"><img id="logo" src="images/generic-logo.svg" alt="Logo"></a></div>
-                <div><a href="#facebook" target="_blank"><img  class="icon" src="images/facebook.png" alt="Facebook"></a></div>
+                <div><a href="facebook.html" target="_blank"><img  class="icon" src="images/facebook.png" alt="Facebook"></a></div>
 				<div>
-					<a href="#insta" target="_blank"><img  class="icon" src="images/instagram.png" alt="Instagram"></a>
+					<a href="instagram.html" target="_blank"><img  class="icon" src="images/instagram.png" alt="Instagram"></a>
 					<svg onclick="menuButton()" width="5em" height="3em">
-						<rect x="2.5em" y=".5em" rx="6px" ry="6px" width="2.5em" height=".5em"></rect>
-						<rect x="2.5em" y="2em" rx="6px" ry="6px" width="2.5em" height=".5em"></rect>
-						<rect x="2.5em" y="1.25em" rx="6px" ry="6px" width="2.5em" height=".5em"></rect>
+						<rect x="2.5em" y=".25em" rx="6px" ry="6px" width="2em" height=".3em"></rect>
+						<rect x="2.5em" y=".75em" rx="6px" ry="6px" width="2em" height=".3em"></rect>
+						<rect x="2.5em" y="1.25em" rx="6px" ry="6px" width="2em" height=".3em"></rect>
 					</svg>
 				</div>
             </header>
@@ -105,26 +132,27 @@
         </div>
         <main>
 			<div id="welcome">
-				<h1 style="text-transform: uppercase">Bendigo Tours &amp; Travel.</h1>
+				<h1 style="text-transform: uppercase">Bendigo Tours &amp; Travel</h1>
 				<ul>
-					<li><h2>One of the leading tour operators in Australia.</h2></li>
-					<li><h2>Providing comprehensive services for groups and individuals.</h2></li>
-					<li><h2>More than 20 years in the tourism industry.</h2></li>
-					<li style="margin-top: 3em"><a class="red-button" href="bookings.html" width="7em">Book now</a></li>
+                    <li><h2>One of Australia leading tour operators.</h2></li>
+					<li><h2>Worry free travel through Australia with our packages.</h2></li>
+					<li style="margin-top: 3em"><a class="red button" href="bookings.html" width="7em">Book now</a></li>
 				</ul>
 			</div>
-			<hr class="sexy-line"/>
-			<div id="welcome-icon">
+            <p>"Nominated as the Leading Australian Travel Agency by World Travel Awards for 3 years on a row 2015, 2016, &amp; 2017."</p>  
+            <hr class="sexy-line"/>
+            <div id="welcome-icon">
 				<ul>
-					<li><img src="images/welcome-icon/guide.png"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>				
-					<li><img src="images/welcome-icon/transportation.png"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
-					<li><img src="images/welcome-icon/hotel.png"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
-					<li><img src="images/welcome-icon/restaurant.png"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
+					<li><div class="icon-wrapper"><img src="images/welcome-icon/guide.png"></div><p>We provide tours packages, as well as custom private &amp; tour guides.</p></li>				
+                    <li><div class="icon-wrapper"><img src="images/welcome-icon/transportation.png"></div><p>Travel worry free with our modern fleet of tour buses and luxurious cars to rent from.</p></li>
+                    <li><div class="icon-wrapper"><img src="images/welcome-icon/hotel.png"></div><p>Stay at 5-star hotels at exclusive prices only available through our agency.</p></li>
+                    <li><div class="icon-wrapper"><img src="images/welcome-icon/restaurant.png"></div><p>Dine at some of the worlds finest restaurants in Australia.</p></li>
 				</ul>
 			</div>
+            <div style="text-align: center; margin: 2em;"><a class="blue button" href="services.html">Check out our services</a></div>
 			<!--THIS IS THE BODY, PUT THE CONTENT HERE., any CSS to the body should be done in an
 			internal stylesheet to avoid bugs lol.-->
-		
+            
         </main>
         <footer>
             <ul class="content"> <!--This is hidden on phone-->
