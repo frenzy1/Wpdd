@@ -17,35 +17,6 @@
             margin-bottom: 2em;
         }
         
-        .button {
-			background-color: transparent;		
-			text-decoration: none;
-			transition: all 150ms ease-in-out;		
-            text-transform: uppercase;	
-		}
-        .red {
-            border-radius: 10px;
-            padding: .25em .5em;
-			margin: 10em 0;
-            color: #FEFEFE;
-            border: 1px solid #FFFFFF;		
-        }
-		.red:hover, .red:focus {
-			background-color: #FF131A;
-            border: none;
-		}
-        .blue {
-            border: 2px solid #000;
-            border-radius: 30px;
-            font-weight: 300;
-            padding: 1em .5em;
-            color: #0d1a2b;
-        }
-        .blue:hover, .blue:focus {
-            background-color: #5cadd6;
-            border: 2px solid #FEFEFE;
-            color: #FEFEFE;
-        }
 		#welcome {
 			color: #FFFFFF;			
 			background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/welcome2.jpg") no-repeat;
@@ -67,6 +38,25 @@
 			text-align: center;
             padding: 0;
 		}
+        .button {
+			background-color: transparent;		
+			text-decoration: none;
+			transition: all 150ms ease-in-out;		
+            text-transform: uppercase;	
+            border: 1px solid #FFFFFF;
+            border-radius: 30px;
+            color: #FEFEFE;
+            padding: .25em .5em;
+            margin: auto 1em;
+        }
+		.red:hover, .red:focus {
+			background-color: #FF131A;
+            border: none;
+		}
+        .blue:hover, .blue:focus {
+            background-color: #5cadd6;
+            border: none;
+        }
 		#welcome-icon {
 			margin: 0;	
             height: 100%;
@@ -92,8 +82,22 @@
         .icon-wrapper {
             margin: .75em auto auto;
             width: 120px; height: 120px;
-            background-color: #5cadd6;
+            background-color: #009ED8;
             border-radius: 50%;
+            position: relative;
+            transition: all 150ms ease-in-out;
+        }
+        .icon-wrapper::before{
+            content:"";
+            position: absolute;
+            width: 120px; height: 120px;
+            left: 0; right: 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: all 100ms ease-in-out;
+        }
+        .icon-wrapper:hover {
+            background-color: #0079a5;
         }
 		#welcome-icon img {
 			margin-left: 0em;
@@ -136,20 +140,20 @@
 				<ul>
                     <li><h2>One of Australia leading tour operators.</h2></li>
 					<li><h2>Worry free travel through Australia with our packages.</h2></li>
-					<li style="margin-top: 3em"><a class="red button" href="bookings.html" width="7em">Book now</a></li>
+					<li style="margin-top: 3em"><a class="blue button" href="about.html" target="_self">More info</a><a class="red button" href="bookings.html" width="7em" target="_self">Book now</a></li>
 				</ul>
 			</div>
-            <p>"Nominated as the Leading Australian Travel Agency by World Travel Awards for 3 years on a row 2015, 2016, &amp; 2017."</p>  
-            <hr class="sexy-line"/>
+            <p style="padding-top: 2em">"Nominated as the Leading Australian Travel Agency by World Travel Awards for 3 years on a row 2015, 2016, &amp; 2017."</p>  
             <div id="welcome-icon">
 				<ul>
-					<li><div class="icon-wrapper"><img src="images/welcome-icon/guide.png"></div><p>We provide tours packages, as well as custom private &amp; tour guides.</p></li>				
-                    <li><div class="icon-wrapper"><img src="images/welcome-icon/transportation.png"></div><p>Travel worry free with our modern fleet of tour buses and luxurious cars to rent from.</p></li>
-                    <li><div class="icon-wrapper"><img src="images/welcome-icon/hotel.png"></div><p>Stay at 5-star hotels at exclusive prices only available through our agency.</p></li>
-                    <li><div class="icon-wrapper"><img src="images/welcome-icon/restaurant.png"></div><p>Dine at some of the worlds finest restaurants in Australia.</p></li>
+					<li><a href="guide.html" target="_self"><div class="icon-wrapper"><img style="padding-top: 5px" src="images/welcome-icon/guide.png" alt="Tour guide"></div></a><p>We provide tours packages, as well as custom private &amp; tour guides.</p></li>				
+                    <li><a href="transport.html" target="_self"><div class="icon-wrapper"><img src="images/welcome-icon/transportation.png" alt="Tranports"></div></a><p>Travel worry free with our modern fleet of tour buses and luxurious cars to rent from.</p></li>
+                    <li><a href="hotel.html" target="_self"><div class="icon-wrapper"><img src="images/welcome-icon/hotel.png" alt="Hotel"></div></a><p>Stay at 5-star hotels at exclusive prices only available through our agency.</p></li>
+                    <li><a href="restaurant.html" target="_self"><div class="icon-wrapper"><img src="images/welcome-icon/restaurant.png" alt="Restaurants &amp; Dining"></div></a><p>Dine at some of the worlds finest restaurants in Australia.</p></li>
+                    <li><a href="flight.html" target="_self"><div class="icon-wrapper"><img style="padding-top: 5px" src="images/welcome-icon/flight.png" alt="Flights and Ticketing"></div></a><p>Dine at some of the worlds finest restaurants in Australia.</p></li>
+                    <li><a href="camp.html" target="_self"><div class="icon-wrapper"><img src="images/welcome-icon/camp.png" alt="Camping"></div></a><p>Dine at some of the worlds finest restaurants in Australia.</p></li>
 				</ul>
 			</div>
-            <div style="text-align: center; margin: 2em;"><a class="blue button" href="services.html">Check out our services</a></div>
 			<!--THIS IS THE BODY, PUT THE CONTENT HERE., any CSS to the body should be done in an
 			internal stylesheet to avoid bugs lol.-->
             
