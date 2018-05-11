@@ -202,7 +202,7 @@ footer ul li a:focus, footer ul li a:hover {
 	nav {
 		display: block;
 		background: #FFFFFF;
-		color: var(--dark)
+		color: var(--dark);
 		vertical-align: middle;
 	}
 	nav a{
