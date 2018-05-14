@@ -65,15 +65,22 @@ header div svg:hover, header div svg:focus {
 }
 .icon {
 	display: none;
-    margin: 1em 0;
-	
+    margin: 1em 0;	
     width: 2em;
-    box-shadow: 0 10px 5px -11px #000;
-    transition: all 150ms ease-in-out;
+	box-shadow: 0 10px 5px -11px #000;
 }
 .icon:focus, .icon:hover {
-    box-shadow: 0 10px 10px -10px #000;
-    transform: translate(0, -3px);
+	animation: bounce 350ms infinite normal;
+}
+@keyframes bounce {
+		0%, 100% {
+			box-shadow: 0 10px 5px -11px #000;
+			transform: translateY(0);
+		}
+		50% {
+			box-shadow: 0 10px 10px -10px #000;
+			transform: translateY(-3px);
+		}
 }
 .sexy-line { 
     margin: 0px 0;
@@ -98,7 +105,6 @@ nav a {
     text-decoration: none;
     color: #FFFFFF;
     transition: all 150ms ease-in-out;
-	
 }
 nav > ul{
 	display: flex;
