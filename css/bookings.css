@@ -6,13 +6,15 @@ main img {
 	color: #000000AA;
 	text-align: center;
 }
+/*Icons*/
 .search img {
 	width: 35px; height: 35px;
 }
+/*Advanced Search*/
 .search a h5{
 	display: inline-block;
 	font-size: .6em;
-	color: #40404009;
+	color: #4040402E;
 }
 .arrow {
 	display: inline-block;
@@ -24,12 +26,13 @@ main img {
 }
 .search a:hover h5 {
 	text-decoration: underline;
-	color: #4040402E;
+	color: #4040403E;
 }
 .search a:hover .arrow {
 	text-decoration: underline;
-	border-color: #4040402E;
+	border-color: #4040403E;
 }
+/**/
 .calendar {
 	margin-bottom: 1em;
 }
@@ -44,6 +47,7 @@ main img {
 	width: 140px;
 	font-size: .8em;
 }
+/**/
 .people div {
 	display: inline-block;
 	position: relative;
@@ -64,16 +68,15 @@ main img {
 	content: "children";
 }
 #submit {
+    position: relative;
 	font-size: .8em;
 	margin-left: 3em;
-	background: none;
+	background-color: #00B3FFAA;
 	border: transparent;
-	border-radius: 30px;
 	padding: .25em .5em;
 	transition: all 150ms ease-in-out;
+	color: #FEFEFE;
 }
 #submit:hover {
 	cursor:pointer;
-	color: #FEFEFE;
-	background-color: #00B3FFAA;
 }
