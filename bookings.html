@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="images/logo-icon.png"/>
     <link rel="stylesheet" type="text/css" href="css/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bookings.css">
 	<style>
 		.current {
 			color: #e94e1b;
@@ -42,12 +43,40 @@
             </nav>
         </div>
         <main>
-			<div id="welcome">
-				<h1>Welcome to Australia.</h1>
+			<div class="search">
+				<h4>Search a tour</h4>
+				<form>
+					<div class="calendar">
+						<img src="images/bookings/calendar.png"> 
+						<input type="date" name="departure-date">
+						<input type="date" name="arrival-date">
+					</div>
+					<div class="people">
+						<img src="images/bookings/people.png">
+						<div id="adult">
+							<input type="number" name="adult">
+						</div>
+						<div id="children">
+							<input type="number" name="children">
+						</div>
+					</div>
+					<a href="#advanced"><h5><div class="arrow"></div>&nbsp;Advanced Search</h5></a>
+					<input id="submit" type="submit" value="Search">
+				</form>
 			</div>
-			<!--THIS IS THE BODY, PUT THE CONTENT HERE., any CSS to the body should be done in an
-			internal stylesheet to avoid bugs lol.-->
-		
+			<img id="kangaroo" src="images/bookings/bookings.jpg">
+		<!--
+					<div class="destination">
+						<img src="images/bookings/location.png">
+					<select name="departure-location">
+							<option value="melbourne">Melbourne</option>
+							<option value="sydney">Sydney</option>
+						</select>
+						<select name="arrival-location">
+							<option value="melbourne">Melbourne</option>
+							<option value="sydney">Sydney</option>
+						</select>
+					</div>-->
         </main>
         <footer>
             <ul class="content"> <!--This is hidden on phone-->
@@ -73,5 +102,6 @@
         </footer>
     </div>
 	<script src="javascript/main_script.js"></script>
+	<script src="javascript/bookings.js"></script>
 </body>
 </html>

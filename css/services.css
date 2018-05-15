@@ -1,36 +1,52 @@
 main {
 	max-width: 100%;
+	text-align: center;
+}
+main p {
+	margin: 1em 1.5em;
+	padding: .5em;
+	background: #00B3FFAA;
+	color: #FEFEFE;
+	border-radius: 30px;
 }
 main div {
-	display: flex;
-	flex-flow: column;	
+	margin-bottom: 1em;
 }
-main div {
-	text-align: center;
-}
-main div img {
-	max-width: 100%; max-height: 500px;
-}
-main div p {
-	text-align: center;
-	max-width: 100;
-}
-main ul {
-	list-style: none;
-	text-align: center;
-	margin: 0; padding: 0;
-}
-main ul li {
-	margin: 2em 1em;
-}
-main ul li p {
-	text-align: left;
-	padding: 0 1em;
-}
-main ul li img {
-	margin-top: 1em;
-	width: 100px; height: 100px;	
-}
-main ul li a {
+main div a {
+	display: inline-block;
+	width: 200px; height: 170px;
+	border: 1px solid rgba(0, 0, 0, .05);
+	vertical-align: middle;
 	text-decoration: none;
+	color: #404040;
+	transition: all 150ms ease-in-out;
+}
+main div a:hover {
+	background-color: #00B3FFAA;
+	color: #FEFEFE;	
+	box-shadow: 3px 3px 10px 3px;
+}
+main div a img {
+	width: 45px; height: 45px;
+	margin-top: 1em;
+}
+main div a h5 {
+}
+.arrow {
+	display: inline-block;
+	margin: 0; padding: 0;
+	border-bottom: 2px solid #404040;
+	border-right: 2px solid #404040;
+	min-width: 10px; min-height: 10px;
+	transform: rotate(-45deg);
+}
+@media only screen and (min-width: 700px) {
+	main div a {
+		width: 400px; 
+		height: 170px;
+	}
+	main div a img {
+	width: 60px; height: 60px;
+	margin-top: 1em;
+	}
 }

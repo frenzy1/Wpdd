@@ -85,7 +85,7 @@ main > p {
     margin: .75em auto auto;
     width: 120px; height: 120px;
     display: inline-block;
-    background-color: #00B3FF;
+    background-color: #00B3FFAA;
     border-radius: 50%;
     position: relative; 
 }

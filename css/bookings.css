@@ -1,0 +1,79 @@
+main img {
+	max-width: 100%;
+}
+.search {
+	margin: .5em 1em;
+	color: #000000AA;
+	text-align: center;
+}
+.search img {
+	width: 35px; height: 35px;
+}
+.search a h5{
+	display: inline-block;
+	font-size: .6em;
+	color: #40404009;
+}
+.arrow {
+	display: inline-block;
+	margin: 0; padding: 0;
+	border-bottom: 2px solid #40404005;
+	border-right: 2px solid #40404005;
+	min-width: 10px; min-height: 10px;
+	transform: rotate(-45deg);
+}
+.search a:hover h5 {
+	text-decoration: underline;
+	color: #4040402E;
+}
+.search a:hover .arrow {
+	text-decoration: underline;
+	border-color: #4040402E;
+}
+.calendar {
+	margin-bottom: 1em;
+}
+.calendar img, .people img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.calendar input, .people input {
+	border: none;
+	border-bottom: 2px solid #4040402E;
+	background: transparent;
+	width: 140px;
+	font-size: .8em;
+}
+.people div {
+	display: inline-block;
+	position: relative;
+}
+#adult::after, #children::after {
+	position: absolute;
+	font-size: .8em;
+	top:5px; left:3px;
+	z-index: -1;
+}
+#adult:hover::after, #children:hover::after {
+	right: 1em;
+}
+#adult::after {
+	content: "adults";
+}
+#children::after {
+	content: "children";
+}
+#submit {
+	font-size: .8em;
+	margin-left: 3em;
+	background: none;
+	border: transparent;
+	border-radius: 30px;
+	padding: .25em .5em;
+	transition: all 150ms ease-in-out;
+}
+#submit:hover {
+	cursor:pointer;
+	color: #FEFEFE;
+	background-color: #00B3FFAA;
+}
