@@ -10,7 +10,6 @@ function getWidth(x) {
 	if (x.matches) {
 		menu.style.display = "block"
 	} else {menu.style.display = "none"}
-	console.log(x.matches)
 }
 
 

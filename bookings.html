@@ -46,32 +46,32 @@
 			<div>
 				<a class="tiles" onclick="revealTour()" target="_self">
                     <img src="images/welcome-icon/guide.png" alt="Tour guide">
-					<h5><div class="arrow"></div>&nbsp;Tour Guides</h5>
-				</a><!--
-				--><a class="tiles" onclick="revealTransports()" target="_self">
+					<h5>Tour Guides</h5>
+				</a>
+                <a class="tiles" onclick="revealTransports()" target="_self">
                     <img src="images/welcome-icon/transportation.png" alt="Tranports">
-					<h5><div class="arrow"></div>&nbsp;Transportations</h5>
-				</a><!--
-				--><a class="tiles" onclick="revealHotels()" target="_self">
+					<h5>Transports</h5>
+				</a>
+                <a class="tiles" onclick="revealHotels()" target="_self">
                     <img src="images/welcome-icon/hotel.png" alt="Hotel">
-					<h5><div class="arrow"></div>&nbsp;Hotels</h5>
-				</a><!--
-				--><a class="tiles" onclick="revealRestaurants()" target="_self">
+					<h5>Hotels</h5>
+				</a>
+                <a class="tiles" onclick="revealRestaurants()" target="_self">
                     <img src="images/welcome-icon/restaurant.png" alt="Restaurants &amp; Dining">
-					<h5><div class="arrow"></div>&nbsp;Dining</h5>
-				</a><!--
-				--><a class="tiles" onclick="revealFlights()" target="_self">
+					<h5>Dining</h5>
+				</a>
+                <a class="tiles" onclick="revealFlights()" target="_self">
                     <img src="images/welcome-icon/flight.png" alt="Flights and Ticketing">
-					<h5><div class="arrow"></div>&nbsp;Flights</h5>
-				</a><!--
-				--><a class="tiles" onclick="revealCamp()" target="_self">
+					<h5>Flights</h5>
+				</a>
+                <a class="tiles" onclick="revealCamp()" target="_self">
                     <img src="images/welcome-icon/camp.png" alt="Camping">
-					<h5><div class="arrow"></div>&nbsp;Camping</h5>
+					<h5>Camping</h5>
 				</a>
 			</div>
 			<div id="book">
 				<h4 id="service-header"></h4>
-				<form>
+				<form id="form">
 					<div id="firstfield">
 					<!--Transports, hotels, and restaurants use unique first field-->
 						<img src="">
@@ -106,7 +106,7 @@
 						<span id="input-suffix"></span>
 						<input type="text" pattern="/d*" maxlength="2">
 					</div>
-					<input id="submit" type="submit" onclick="popup1()" value="Book">
+                    <input type="submit" id="submit-button" onclick="popup1()">
 				</form>
 			</div>
 			<img id="kangaroo" src="images/bookings/bookings.jpg">

@@ -72,16 +72,6 @@ header div svg:hover, header div svg:focus {
 .icon:focus, .icon:hover {
 	animation: bounce 350ms infinite normal;
 }
-@keyframes bounce {
-		0%, 100% {
-			box-shadow: 0 10px 5px -11px #000;
-			transform: translateY(0);
-		}
-		50% {
-			box-shadow: 0 10px 10px -10px #000;
-			transform: translateY(-3px);
-		}
-}
 .sexy-line { 
     margin: 0px 0;
     height: 1px;
@@ -134,7 +124,6 @@ main {
 	font-weight: 200;
 	font-size: 1.5em;
     display: flex;
-    width: 100%;
     flex-flow: column nowrap;
 }
 
@@ -256,4 +245,25 @@ footer ul li a:focus, footer ul li a:hover {
 	nav > ul{
 		margin: 0 5em 0 5em;
 	}
+}
+
+/*Animations*/
+@keyframes bounce {
+		0%, 100% {
+			box-shadow: 0 10px 5px -11px #000;
+			transform: translateY(0);
+		}
+		50% {
+			box-shadow: 0 10px 10px -10px #000;
+			transform: translateY(-3px);
+		}
+}
+
+@keyframes spin-load {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
