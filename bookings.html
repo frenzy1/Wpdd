@@ -20,7 +20,7 @@
              <header>
 				<div class="buffer"></div>
 				<div class="buffer"></div>
-                <div id="logo-wrapper"><a href="#top" target="_self"><img id="logo" src="images/generic-logo.png" alt="Logo"></a></div>
+                <div id="logo-wrapper"><a href="index.html" target="_self"><img id="logo" src="images/generic-logo.png" alt="Logo"></a></div>
                 <div><a href="facebook.html" target="_blank"><img  class="icon" src="images/facebook.png" alt="Facebook"></a></div>
 				<div>
 					<a href="instagram.html" target="_blank"><img  class="icon" src="images/instagram.png" alt="Instagram"></a>
@@ -43,40 +43,73 @@
             </nav>
         </div>
         <main>
-			<div class="search">
-				<h4>Search a tour</h4>
+			<div>
+				<a class="tiles" onclick="revealTour()" target="_self">
+                    <img src="images/welcome-icon/guide.png" alt="Tour guide">
+					<h5><div class="arrow"></div>&nbsp;Tour Guides</h5>
+				</a><!--
+				--><a class="tiles" onclick="revealTransports()" target="_self">
+                    <img src="images/welcome-icon/transportation.png" alt="Tranports">
+					<h5><div class="arrow"></div>&nbsp;Transportations</h5>
+				</a><!--
+				--><a class="tiles" onclick="revealHotels()" target="_self">
+                    <img src="images/welcome-icon/hotel.png" alt="Hotel">
+					<h5><div class="arrow"></div>&nbsp;Hotels</h5>
+				</a><!--
+				--><a class="tiles" onclick="revealRestaurants()" target="_self">
+                    <img src="images/welcome-icon/restaurant.png" alt="Restaurants &amp; Dining">
+					<h5><div class="arrow"></div>&nbsp;Dining</h5>
+				</a><!--
+				--><a class="tiles" onclick="revealFlights()" target="_self">
+                    <img src="images/welcome-icon/flight.png" alt="Flights and Ticketing">
+					<h5><div class="arrow"></div>&nbsp;Flights</h5>
+				</a><!--
+				--><a class="tiles" onclick="revealCamp()" target="_self">
+                    <img src="images/welcome-icon/camp.png" alt="Camping">
+					<h5><div class="arrow"></div>&nbsp;Camping</h5>
+				</a>
+			</div>
+			<div id="book">
+				<h4 id="service-header"></h4>
 				<form>
-					<div class="calendar">
+					<div id="firstfield">
+					<!--Transports, hotels, and restaurants use unique first field-->
+						<img src="">
+						<select id="firstfield-1">
+						</select>
+					</div>
+					<div id="destination">
+						<img src="images/bookings/location.png">
+						<!--Options will be added depending on the service chosen-->
+						<select id="destination-1">
+						</select>
+						<select id="destination-2">
+						</select>
+					</div>
+					<div id="calendar">
 						<img src="images/bookings/calendar.png"> 
 						<input type="date" name="departure-date">
 						<input type="date" name="arrival-date">
 					</div>
-					<div class="people">
+					<div id="people">
 						<img src="images/bookings/people.png">
 						<div id="adult">
-							<input type="number" name="adult">
+							<input type="text" pattern="/d*" maxlength="2" name="adult">
 						</div>
 						<div id="children">
-							<input type="number" name="children">
+							<input type="text" pattern="/d*" maxlength="2" name="children">
 						</div>
 					</div>
-					<a href="#advanced"><h5><div class="arrow"></div>&nbsp;Advanced Search</h5></a>
-					<input id="submit" type="submit" value="Search">
+					<div id="last-field">
+					<!--Number of rooms; Number of seats; Number of tents-->
+						<img src="">
+						<span id="input-suffix"></span>
+						<input type="text" pattern="/d*" maxlength="2">
+					</div>
+					<input id="submit" type="submit" onclick="popup1()" value="Book">
 				</form>
 			</div>
 			<img id="kangaroo" src="images/bookings/bookings.jpg">
-		<!--
-					<div class="destination">
-						<img src="images/bookings/location.png">
-					<select name="departure-location">
-							<option value="melbourne">Melbourne</option>
-							<option value="sydney">Sydney</option>
-						</select>
-						<select name="arrival-location">
-							<option value="melbourne">Melbourne</option>
-							<option value="sydney">Sydney</option>
-						</select>
-					</div>-->
         </main>
         <footer>
             <ul class="content"> <!--This is hidden on phone-->
@@ -92,7 +125,7 @@
 		<li><a href="#Page9" target="_self">Page 9</a></li>
 		<li><a href="#Page10" target="_self">Page 10</a></li>
 		<li><a href="#Page11" target="_self">Page 11</a></li>
-                <li><a href="#top" target="_self"><img src="images/generic-logo.png" alt="Logo"></a></li>
+                <li><a href="index.html" target="_self"><img src="images/generic-logo.png" alt="Logo"></a></li>
 		<li><a href="qualified.html" target="_blank"><img src="./images/w3c.png" alt="W3C"></a></li>
             </ul>
             <ul id="references">

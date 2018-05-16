@@ -1,6 +1,6 @@
 #welcome {
 	color: #FFFFFF;			
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/welcome2.jpg") no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/welcome2.jpg") no-repeat;
 	background-size: cover;
 	height: 100%;	
 	padding: 0 8vw;
@@ -12,9 +12,10 @@
 	text-align: center;
 	margin-top: 0; padding-top: 1em;
 	font-family: "Lucida Handwriting";
+	text-shadow: 0px 3px 20px #000;
 }
 #welcome ul {
-	color: #EEEEEE;
+	color: #FEFEFE;
 	list-style:none;
 	text-align: center;
     padding: 0;

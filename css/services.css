@@ -12,7 +12,7 @@ main p {
 main div {
 	margin-bottom: 1em;
 }
-main div a {
+.tiles {
 	display: inline-block;
 	width: 200px; height: 170px;
 	border: 1px solid rgba(0, 0, 0, .05);
@@ -21,16 +21,14 @@ main div a {
 	color: #404040;
 	transition: all 150ms ease-in-out;
 }
-main div a:hover {
+.tiles:hover {
 	background-color: #00B3FFAA;
 	color: #FEFEFE;	
 	box-shadow: 3px 3px 10px 3px;
 }
-main div a img {
+.tiles img {
 	width: 45px; height: 45px;
 	margin-top: 1em;
-}
-main div a h5 {
 }
 .arrow {
 	display: inline-block;
@@ -41,11 +39,11 @@ main div a h5 {
 	transform: rotate(-45deg);
 }
 @media only screen and (min-width: 700px) {
-	main div a {
+	.tiles {
 		width: 400px; 
 		height: 170px;
 	}
-	main div a img {
+	.tiles img {
 	width: 60px; height: 60px;
 	margin-top: 1em;
 	}
