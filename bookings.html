@@ -44,37 +44,37 @@
         </div>
         <main>
 			<div>
-				<a class="tiles" onclick="revealTour()" target="_self">
+				<a class="tiles" href="#book" onclick="revealTour()" target="_self">
                     <img src="images/welcome-icon/guide.png" alt="Tour guide">
 					<h5>Tour Guides</h5>
 				</a>
-                <a class="tiles" onclick="revealTransports()" target="_self">
+                <a class="tiles" href="#service-header" onclick="revealTransports()" target="_self">
                     <img src="images/welcome-icon/transportation.png" alt="Tranports">
 					<h5>Transports</h5>
 				</a>
-                <a class="tiles" onclick="revealHotels()" target="_self">
+                <a class="tiles" href="#service-header" onclick="revealHotels()" target="_self">
                     <img src="images/welcome-icon/hotel.png" alt="Hotel">
 					<h5>Hotels</h5>
 				</a>
-                <a class="tiles" onclick="revealRestaurants()" target="_self">
+                <a class="tiles" href="#service-header" onclick="revealRestaurants()" target="_self">
                     <img src="images/welcome-icon/restaurant.png" alt="Restaurants &amp; Dining">
 					<h5>Dining</h5>
 				</a>
-                <a class="tiles" onclick="revealFlights()" target="_self">
+                <a class="tiles" href="#service-header" onclick="revealFlights()" target="_self">
                     <img src="images/welcome-icon/flight.png" alt="Flights and Ticketing">
 					<h5>Flights</h5>
 				</a>
-                <a class="tiles" onclick="revealCamp()" target="_self">
+                <a class="tiles" href="#service-header" onclick="revealCamp()" target="_self">
                     <img src="images/welcome-icon/camp.png" alt="Camping">
 					<h5>Camping</h5>
 				</a>
 			</div>
-			<div id="book">
-				<h4 id="service-header"></h4>
-				<form id="form">
+			<div id="book" style="display: none;">
+				<form id="form" action="transaction.html" target="_self">
+					<h4 id="service-header"></h4>
 					<div id="firstfield">
 					<!--Transports, hotels, and restaurants use unique first field-->
-						<img src="">
+						<img id="firstfield-icon" src="">
 						<select id="firstfield-1">
 						</select>
 					</div>
@@ -94,22 +94,23 @@
 					<div id="people">
 						<img src="images/bookings/people.png">
 						<div id="adult">
-							<input type="text" pattern="/d*" maxlength="2" name="adult">
+							<input type="number" min="1" max="99" name="adult">
 						</div>
 						<div id="children">
-							<input type="text" pattern="/d*" maxlength="2" name="children">
+							<input type="text" pattern="/dd" maxlength="2" name="children">
 						</div>
 					</div>
-					<div id="last-field">
+					<div id="lastfield">
 					<!--Number of rooms; Number of seats; Number of tents-->
-						<img src="">
+						<img id="lastfield-icon" src="">
 						<span id="input-suffix"></span>
-						<input type="text" pattern="/d*" maxlength="2">
+						<input style="text-align: center;" type="text" pattern="/dd" maxlength="2">
 					</div>
                     <input type="submit" id="submit-button" onclick="popup1()">
 				</form>
 			</div>
-			<img id="kangaroo" src="images/bookings/bookings.jpg">
+			<img id="background" src="images/bookings/bookings.jpg">
+			<img id="space-filler" src="images/bookings/bookings.jpg" height="500px">
         </main>
         <footer>
             <ul class="content"> <!--This is hidden on phone-->
