@@ -74,7 +74,7 @@ main div:nth-child(1) {
 	position: absolute;
 	font-size: .8em;
 	top:3px; left:1.3em;
-	z-index:-1;
+	z-index: -1;
 }
 #adult::after {
 	content: "adults";
@@ -89,8 +89,8 @@ main div:nth-child(1) {
 #input-suffix {
 	position: absolute;
 	font-size: .8em;
-	left: 50%; top: 5px;
-    z-index: 3;
+	left: 45%; top: 40px;
+    z-index: -1;
 }
 /*Submit button*/
 #submit-button {
@@ -141,21 +141,36 @@ main div:nth-child(1) {
     #book img {
         display: inline-block;
     }
+    #input-suffix {
+        position: absolute;
+        font-size: .8em;
+        left: 45%; top: 5px;
+        z-index: -1;
+    }
 }
 @media only screen and (min-width: 700px) {
 	main{
 		padding-top: 1em;
 		position: relative;
-		overflow: hidden;
-	}
+        overflow: hidden;
+    }
     #book {
         display: initial;
     }
     .defa {
         visibility: hidden;
     }
+    #form {
+        margin-bottom: 5em;
+    }
     #form div {
         margin: 1em;
+    }
+    #input-suffix {
+        position: absolute;
+        font-size: .8em;
+        left: 50%; top: 5px;
+        z-index: -1;
     }
 	#background {
 		display: initial;

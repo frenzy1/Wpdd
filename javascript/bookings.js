@@ -25,6 +25,7 @@ function revealTour() {
         } else {
             let c = confirm("All information will be lost!");
             if (c === true) {
+                serviceHeader.innerHTML = "Tour Packages";
                 book.classList.toggle("defa");
                 book.classList.toggle("tour");
                 book.classList.toggle("transports", false);
