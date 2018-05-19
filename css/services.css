@@ -1,6 +1,7 @@
 main {
 	max-width: 100%;
 	text-align: center;
+    position: relative;
 }
 main p {
 	margin: 1em 1.5em;
@@ -11,6 +12,9 @@ main p {
 }
 main div {
 	margin-bottom: 1em;
+}
+#background {
+    display: none;
 }
 .tiles {
 	display: inline-block;
@@ -24,7 +28,7 @@ main div {
 .tiles:hover {
 	background-color: #00B3FFAA;
 	color: #FEFEFE;	
-	box-shadow: 3px 3px 10px 3px;
+	box-shadow: 3px 3px 10px -3px #000;
 }
 .tiles img {
 	width: 45px; height: 45px;
@@ -39,12 +43,20 @@ main div {
 	transform: rotate(-45deg);
 }
 @media only screen and (min-width: 700px) {
+    main {overflow:hidden}
 	.tiles {
 		width: 400px; 
 		height: 170px;
 	}
 	.tiles img {
-	width: 60px; height: 60px;
-	margin-top: 1em;
+        width: 60px; height: 60px;
+        margin-top: 1em;
 	}
+    #background {
+        display: initial;
+        position: absolute;
+        top:0;
+        z-index: -2;
+        max-width: 100%;
+    }
 }

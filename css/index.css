@@ -1,6 +1,9 @@
+#background {
+    display: none;
+}
 #welcome {
 	color: #FFFFFF;			
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/welcome2.jpg") no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../images/welcome2.jpg") no-repeat;
 	background-size: cover;
 	height: 100%;	
 	padding: 0 8vw;
@@ -105,4 +108,17 @@ main > p {
 	margin-left: 0em;
     margin-top: .75em;
 	width: 75px; height: 75px;
+}
+@media only screen and (min-width: 700px) {
+    main {overflow: hidden;}
+    #background {
+        display: initial;
+        position: absolute;
+        max-width: 100%;
+        top: 0px;
+        z-index: -2;
+    }
+    #welcome-icon ul li{
+        background: rgba(255, 255, 255, .6);
+    }
 }

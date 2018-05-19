@@ -44,32 +44,32 @@
         </div>
         <main>
 			<div>
-				<a class="tiles" href="#book" onclick="revealTour()" target="_self">
+				<a class="tiles" onclick="revealTour()" target="_self">
                     <img src="images/welcome-icon/guide.png" alt="Tour guide">
 					<h5>Tour Guides</h5>
 				</a>
-                <a class="tiles" href="#service-header" onclick="revealTransports()" target="_self">
+                <a class="tiles" onclick="revealTransports()" target="_self">
                     <img src="images/welcome-icon/transportation.png" alt="Tranports">
 					<h5>Transports</h5>
 				</a>
-                <a class="tiles" href="#service-header" onclick="revealHotels()" target="_self">
+                <a class="tiles" onclick="revealHotels()" target="_self">
                     <img src="images/welcome-icon/hotel.png" alt="Hotel">
 					<h5>Hotels</h5>
 				</a>
-                <a class="tiles" href="#service-header" onclick="revealRestaurants()" target="_self">
+                <a class="tiles" onclick="revealRestaurants()" target="_self">
                     <img src="images/welcome-icon/restaurant.png" alt="Restaurants &amp; Dining">
 					<h5>Dining</h5>
 				</a>
-                <a class="tiles" href="#service-header" onclick="revealFlights()" target="_self">
+                <a class="tiles" onclick="revealFlights()" target="_self">
                     <img src="images/welcome-icon/flight.png" alt="Flights and Ticketing">
 					<h5>Flights</h5>
 				</a>
-                <a class="tiles" href="#service-header" onclick="revealCamp()" target="_self">
+                <a class="tiles" onclick="revealCamp()" target="_self">
                     <img src="images/welcome-icon/camp.png" alt="Camping">
 					<h5>Camping</h5>
 				</a>
 			</div>
-			<div id="book" style="display: none;">
+			<div id="book" class="defa">
 				<form id="form" action="transaction.html" target="_self">
 					<h4 id="service-header"></h4>
 					<div id="firstfield">
@@ -97,20 +97,19 @@
 							<input type="number" min="1" max="99" name="adult">
 						</div>
 						<div id="children">
-							<input type="text" pattern="/dd" maxlength="2" name="children">
+							<input type="number" min="1" max="99" name="children">
 						</div>
 					</div>
 					<div id="lastfield">
 					<!--Number of rooms; Number of seats; Number of tents-->
 						<img id="lastfield-icon" src="">
-						<span id="input-suffix"></span>
-						<input style="text-align: center;" type="text" pattern="/dd" maxlength="2">
+						<span id="input-suffix">dasd</span>
+						<input type="number" min="1" max="99">
 					</div>
                     <input type="submit" id="submit-button" onclick="popup1()">
 				</form>
 			</div>
 			<img id="background" src="images/bookings/bookings.jpg">
-			<img id="space-filler" src="images/bookings/bookings.jpg" height="500px">
         </main>
         <footer>
             <ul class="content"> <!--This is hidden on phone-->
