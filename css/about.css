@@ -5,6 +5,9 @@ main {
 #background {
 	display: none;
 }
+.wrapper p {
+    font-size: .75em;
+}
 .button {
 	background-color: transparent;		
 	text-decoration: none;
@@ -48,8 +51,9 @@ main {
 	.wrapper {
 		margin: auto 2em;
 	}
-	.button {
-	}
+    .wrapper p {
+        font-size: 1em;
+    }
 	#background {
 		display: initial;
 		position: absolute;

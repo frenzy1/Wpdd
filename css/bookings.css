@@ -22,7 +22,7 @@ main div:nth-child(1) {
     height: inherit;
     border: 1px solid #0000000F;
 }
-.tiles:hover {
+.tiles:hover, .tiles:focus {
 	cursor: pointer;
 	background-color: #00B3FFAA;
 	color: #FEFEFE;	
@@ -105,7 +105,7 @@ main div:nth-child(1) {
     border-radius: 20px;
 	outline: 0;
 }
-#submit-button:hover {
+#submit-button:hover, #submit-button:focus {
 	cursor: pointer;
     background: #FF131AEE;
     color: #FEFEFE;

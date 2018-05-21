@@ -11,6 +11,8 @@ let lastfieldIcon = document.getElementById("lastfield-icon");
 let lastfieldSuffix = document.getElementById("input-suffix");
 let submitButton = document.getElementById("submit-button");
 
+let tiles = document.getElementsByClassName("tiles");
+
 function revealTour() {
 	if (book.getAttribute("class") != "tour") {
         if (book.getAttribute("class") == "defa") {
@@ -245,3 +247,19 @@ function popup1() {
                       alert("BANK DETAIL NOW!!!");   
                      }, 2500);
 }
+
+function addHref (x) {
+    if (x.matches){
+        for (let i = 0; i < 6; i++) {
+            tiles[i].removeAttribute("href");
+        }
+    } else {
+        for (let i = 0; i < 6; i++) {
+            tiles[i].setAttribute("href", "#book");
+        }
+    }
+}
+
+//widthCheck is from main_script.js
+addHref(widthCheck);
+widthCheck.addListener(addHref);
