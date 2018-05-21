@@ -1,0 +1,122 @@
+#background {
+	display: none;
+}
+#form {
+	margin: 1em;
+}
+fieldset{
+	margin-bottom: .5em;
+}
+#form fieldset input {
+	border: none;
+	border-bottom: 2px solid #4040402E;
+	background: transparent;
+	width: 100%;
+	font-size: .8em;
+}
+#secure {
+	position: relative;
+	width: 250px; height: 70px;
+}
+#secure p {
+	font-size: .5em;
+	text-align: left;
+}
+#secure img {
+	transform: translateY(-15px);
+	float: left;
+	width: 100px;
+}
+#visa {
+	margin-top: 20px;
+}
+#visa p {
+	margin-top: 10px;
+}
+#visa img{
+	width: 150px;
+	transform: translate(-100px, 5px);
+}
+#cvv {
+	position: relative
+}
+#cvv img{
+	position: absolute;
+	left: 2em;
+	top: -5px;
+	width: 50px;
+	z-index: -1;
+}
+#submit-button {
+	display: block;
+	font-size: .8em;
+    margin: auto;
+	background: transparent;
+	border: 2px solid #FF131AEE;
+	padding: .4em .5em .25em;
+	transition: all 300ms ease-in-out;
+	color: #FF131AEE;
+    text-transform: uppercase;
+    border-radius: 20px;
+	outline: 0;
+}
+#submit-button:hover {
+	cursor: pointer;
+    background: #FF131AEE;
+    color: #FEFEFE;
+	outline: 0;
+}
+#submit-button:active {
+    transform:  translateY(2px);
+    box-shadow: 0px 3px 10px -2px #000;
+	outline: 0;
+}
+#submit-button.loading {
+    border-right: 2px solid transparent;
+    font-size: 0;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: spin-load 300ms linear infinite;
+	outline: 0;
+}
+#submit-button.success {
+    background:  url("../images/bookings/success.png") no-repeat center, linear-gradient(#13FF52, #13FF52);
+    background-size: 35px 40px;
+    border: transparent; color: transparent;
+    border-radius: 50%;
+    width: 60px; height: 60px;
+	outline: 0;
+}
+@media only screen and (min-width: 700px) {
+	main {
+		position: relative;
+		overflow: hidden;
+		justify-content: center;
+	}
+	#form {
+		margin: 3em auto;
+		position: relative;
+		padding-bottom: 50px;
+	}
+	#form fieldset {
+		display: block;
+		float: left;
+	}
+	#personal-info{
+		width: 250px; height: 577px;
+	}
+	#name {
+		margin-top: 150px;
+	}
+	#background {
+		display: initial;
+		position: absolute;
+		z-index: -2;
+	}
+	#submit-button {
+		display: block;
+		margin: auto;	
+		clear: both;
+	}
+}

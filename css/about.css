@@ -1,0 +1,59 @@
+main {
+	margin: auto 1em;
+	padding-bottom: 1em;
+}
+#background {
+	display: none;
+}
+.button {
+	background-color: transparent;		
+	text-decoration: none;
+	transition: all 150ms ease-in-out;		
+    text-transform: uppercase;	
+    border-radius: 30px;
+    padding: .25em .5em;
+    color: #404040;
+    border: 1.5px solid #404040;
+}
+.arrow {
+	display: inline-block;
+	width: 10px; height: 10px;
+	border-right: 3px solid #000;
+	border-bottom: 3px solid #000;
+	transform: rotate(-45deg);
+	transition: all 300ms ease-in-out;
+}
+.button:hover, .button:focus {
+    border: 1px solid transparent;
+    color: #FEFEFE;
+    text-shadow: none;
+    background-color: #5cadd6;
+}
+.button:hover .arrow, .button:focus .arrow {
+	border-color: #FEFEFE;
+	transform: rotate(315deg);
+}
+@media only screen and (min-width: 700px) {
+	main h1 {
+		text-align: center;
+	}
+}
+@media only screen and (min-width: 1400px) {
+	main {
+		position: relative;
+		margin: 0;
+		padding-bottom: 12em;
+		overflow: hidden;
+	}
+	.wrapper {
+		margin: auto 2em;
+	}
+	.button {
+	}
+	#background {
+		display: initial;
+		position: absolute;
+		top: 0;
+		z-index: -2;
+	}
+}

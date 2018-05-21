@@ -88,16 +88,16 @@
 					</div>
 					<div id="calendar">
 						<img src="images/bookings/calendar.png"> 
-						<input type="date" name="departure-date">
-						<input type="date" name="arrival-date">
+						<input type="date" name="departure-date" required>
+						<input type="date" name="arrival-date" required>
 					</div>
 					<div id="people">
 						<img src="images/bookings/people.png">
 						<div id="adult">
-							<input type="number" min="1" max="99" name="adult">
+							<input type="number" min="1" max="99" name="adult" required>
 						</div>
 						<div id="children">
-							<input type="number" min="1" max="99" name="children">
+							<input type="number" min="0" max="99" name="children" value="0">
 						</div>
 					</div>
 					<div id="lastfield">

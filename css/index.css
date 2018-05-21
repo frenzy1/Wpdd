@@ -109,13 +109,13 @@ main > p {
     margin-top: .75em;
 	width: 75px; height: 75px;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1400px) {
     main {overflow: hidden;}
     #background {
         display: initial;
         position: absolute;
         max-width: 100%;
-        top: 0px;
+        top: 300px;
         z-index: -2;
     }
     #welcome-icon ul li{

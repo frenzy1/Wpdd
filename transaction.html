@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bendigo Tours | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/logo-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/transaction.css">
+	<style>
+		.current {
+			color: #e94e1b;
+			font-size: 1.2em;
+		}
+	</style>
+</head>
+<body>
+    <div class="container" id="top">
+        <div class="top-wrapper" >
+            <header>
+				<div class="buffer"></div>
+				<div class="buffer"></div>
+                <div id="logo-wrapper"><a href="index.html" target="_self"><img id="logo" src="images/generic-logo.png" alt="Logo"></a></div>
+                <div><a href="facebook.html" target="_blank"><img  class="icon" src="images/facebook.png" alt="Facebook"></a></div>
+				<div>
+					<a href="instagram.html" target="_blank"><img  class="icon" src="images/instagram.png" alt="Instagram"></a>
+					<svg onclick="menuButton()" width="5em" height="3em">
+						<rect x="2.5em" y=".25em" rx="6px" ry="6px" width="2em" height=".3em"></rect>
+						<rect x="2.5em" y=".75em" rx="6px" ry="6px" width="2em" height=".3em"></rect>
+						<rect x="2.5em" y="1.25em" rx="6px" ry="6px" width="2em" height=".3em"></rect>
+					</svg>
+				</div>
+            </header>
+            <hr class="sexy-line"/>
+            <nav id="menu">
+                <ul> <!--This is hidden on phone screen-->
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="about.html" target="_self">About Us</a></li>
+                    <li><a href="services.html" target="_self">Services</a></li>
+                    <li><a class="current" href="bookings.html" target="_self">Bookings</a></li>
+					<li><a href="contact.html" target="_blank">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+			<form id="form" action="success.html">
+					<fieldset id="personal-info">
+					<legend>Personal Detail</legend>
+					<div id="name">
+						<p>First Name</p> 
+						<input type="text" name="first-name">
+						<p>Last Name</p>
+						<input type="text" name="last-name">
+					</div>
+					<div id="contact">
+						<p>Mobile</p>
+						<input type="number" pattern="\dd\-ddd\-ddd\-ddd" name="mobile-number">
+						<p>Email</p>
+						<input type="email" name="email">
+					</div>
+					</fieldset>
+					<fieldset id="credit">
+						<legend>Credit Detail</legend>
+						<div id="secure">
+							<img src="images/transaction/secure.png">
+							<p>All transactions are secured with industry standard encryption. We do not store your credit card details.</p>
+						</div>
+						<div id="visa">
+							<img src="images/transaction/visaamex.png">
+							<p>Card Number</p>
+							<input type="number" name="card-number">
+						</div>
+						<p>Cardholder Name</p>
+						<input type="text" name="cardholder-name">
+						<p>Expiration Date</p>
+						<input type="date" name="expiration-date">
+						<p id="cvv">
+							CVV
+							<img src="images/transaction/cvv.svg">
+						</p>
+						<input type="number" pattern="\d{2, 3}" name="cvv">
+					</fieldset>
+					<input id="submit-button" onclick="popup1()" type="submit" value="CONFIRM">
+			</form>
+			<img id="background" src="images/bookings/bookings.jpg">
+        </main>
+        <footer>
+            <ul class="content"> <!--This is hidden on phone-->
+                <li style="font-weight: 500; font-size: 1.5em; text-transform: uppercase">Content</li>
+				<li><a href="index.html" target="_self">Home</a></li>
+				<li><a href="about.html" target="_self">About Us</a></li>
+				<li><a href="services.html" target="_self">Services</a></li>
+				<li><a href="bookings.html" target="_self">Bookings</a></li>
+				<li><a href="contact.html" target="_self">Contact Us</a></li>
+				<li><a href="#Page6" target="_self">Page 6</a></li>
+				<li><a href="#Page7" target="_self">Page 7</a></li>
+				<li><a href="#Page8" target="_self">Page 8</a></li>
+				<li><a href="#Page9" target="_self">Page 9</a></li>
+				<li><a href="#Page10" target="_self">Page 10</a></li>
+				<li><a href="#Page11" target="_self">Page 11</a></li>
+                <li><a href="index.html" target="_self"><img src="images/generic-logo.png" alt="Logo"></a></li>
+				<li><a href="qualified.html" target="_blank"><img src="./images/w3c.png" alt="W3C"></a></li>
+            </ul>
+            <ul id="references">
+                <li><a href="references.html" target="_blank">References</a></li>
+                <li style="color: rgba(255, 255, 255, .2)">&copy; Phung Nguyen, Aaron Badilla, Richard</li>
+            </ul>
+        </footer>
+    </div>
+	<script src="javascript/transaction.js"></script>
+	<script src="javascript/main_script.js"></script>
+</body>
+</html>
