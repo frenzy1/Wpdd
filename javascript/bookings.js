@@ -9,7 +9,6 @@ let people = document.getElementById("people");
 let lastfield = document.getElementById("lastfield");
 let lastfieldIcon = document.getElementById("lastfield-icon");
 let lastfieldSuffix = document.getElementById("input-suffix");
-let submitButton = document.getElementById("submit-button");
 
 let tiles = document.getElementsByClassName("tiles");
 
@@ -235,17 +234,6 @@ function revealCamp() {
             document.getElementById("form").reset();
         }
     }
-}
-
-function popup1() {
-    event.preventDefault();
-    submitButton.classList.toggle("loading");
-    setTimeout(() => {submitButton.classList.toggle("loading");
-                      submitButton.classList.toggle("success");
-                     }, 1500);
-    setTimeout(() => {document.getElementById("form").submit();
-                      alert("BANK DETAIL NOW!!!");   
-                     }, 2500);
 }
 
 function addHref (x) {

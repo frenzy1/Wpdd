@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="images/logo-icon.png"/>
     <link rel="stylesheet" type="text/css" href="css/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
 	<style>
 		.current {
 			color: #e94e1b;
@@ -42,12 +43,38 @@
             </nav>
         </div>
         <main>
-			<div id="welcome">
-				<h1>Welcome to Australia.</h1>
+			<div>
+			<div class="contact-info">
+				<h2>Contact info</h2>
+				<p><b>Phone</b>: <a href="tel:+0061417885793">0417885793</a></p>
+				<p><b>Email</b>: <a href="mailto:bendigo@abc.com">bendigo@abcdefgh.com</a></p>
+				<p><b>Address</b>: 15 Somewhere St Melbourne VIC, 3000</p>
 			</div>
-			<!--THIS IS THE BODY, PUT THE CONTENT HERE., any CSS to the body should be done in an
-			internal stylesheet to avoid bugs lol.-->
-		
+				<fieldset>
+				<form id="form" action="index.html" target="_self">
+						<p> 
+							<label for="First Name"><span>First Name</span></label>
+							<input type="text" id="First Name"><br>
+							<label for="Last Name"><span>Last Name</span></label>
+							<input type="text" id="Last Name">
+						</p>
+						<p> 
+							<label for="Email"><span>Email</span></label>
+							<input type="text" id="Email"><br>
+							<label for="Phone"><span>Phone</span></label>
+							<input type="text" id="Phone">
+						</p>
+						<p>
+							<label for="Message"><span>Message</span></label>
+							<textarea id="message"></textarea>
+						</p>
+						<div>
+							<input class="submit-button" type="submit" value="SUBMIT" onclick="popup1()">
+						</div>
+				</form>
+				</fieldset>
+		</div>
+			<img id="background" src="images/bookings/bookings.jpg">
         </main>
         <footer>
             <ul class="content"> <!--This is hidden on phone-->
