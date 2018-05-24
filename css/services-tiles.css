@@ -1,0 +1,68 @@
+main {
+	position: relative;
+	padding-bottom: 3em;
+}
+main div {
+	margin: 1em;
+}
+main div img {
+	width: 100%;
+}
+#background {
+	display:none;
+}
+.buttons-1, .buttons-2 {
+	position: absolute;
+	left: 1em;
+}
+.buttons-1 {margin: .5em;}
+.buttons-2 {bottom: 1em;}
+.back-button {
+	float: left;
+	margin: 0;
+	font-size: .75em;
+}
+.back-arrow {
+	display: inline-block;
+	width: 5px; height: 5px;
+	margin: 0; padding: 0;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+	transform: rotate(135deg) translate(0, 2px);
+}
+.button {
+	width: 110px;
+	background-color: transparent;		
+	text-decoration: none;
+	transition: all 150ms ease-in-out;		
+    text-transform: uppercase;	
+    border-radius: 30px;
+    padding: .25em .5em;
+    margin: .4em 1em;
+    color: #404040;
+    border: 1.5px solid #404040;
+}
+.button:hover, .button:focus {
+	background-color: #FF131A;
+    border: 1px solid transparent;
+    color: #FEFEFE;
+    text-shadow: none;
+}
+@media only screen and (min-width: 1100px) {
+	main {
+		margin: 3em;
+	}
+	.buttons-1, .buttons-2 {
+		position: absolute;
+		right: 0;
+		left: 45%;
+	}
+	.back-button {
+		float: right;
+	}
+	main img {
+		max-width: 50%;
+		float: left;
+	}
+	
+}
