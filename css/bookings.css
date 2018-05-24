@@ -147,44 +147,41 @@ main div:nth-child(1) {
     visibility: visible;
     display: initial;
 }
-.tour #firstfield {
-    display: none;
-}
-.tour #lastfield {
+.tour #firstfield, .tour #lastfield, .tour .camp-sites {
     display: none;
 }
 .transports {
     visibility: visible;
     display: initial;
 }
-.transports #lastfield {
+.transports #lastfield, .transports .rooms, .transports .seats, .transports .camp-sites {
     display: none;
 }
 .hotels {
     visibility: visible;
     display: initial;
 }
+.hotels #destination, .hotels .cars, .hotels .seats {
+	display: none;
+}
 .dining {
     visibility: visible;
     display: initial;
+}
+.dining #destination, .dining .cars, .dining .rooms {
+	display: none;
 }
 .flights {
     visibility: visible;
     display: initial;
 }
-.flights #firstfield {
-    display: none;
-}
-.flights #lastfield {
+.flights #firstfield, .flights #lastfield, .flights .camp-sites {
     display: none;
 }
 .camping {
     visibility: visible;
     display: initial;
 }
-.camping #firstfield {
-    display: none;
-}
-.camping #destination-2 {
+.camping #firstfield, .camping #destination-2, .camping .location {
     display: none;
 }

@@ -76,14 +76,35 @@
 					<!--Transports, hotels, and restaurants use unique first field-->
 						<img id="firstfield-icon" src="">
 						<select id="firstfield-1">
+								<option style="display: none;"></option>
+								<option class="cars">Small Cars</option>
+								<option class="cars">Mid Sized Cars</option>
+								<option class="cars">Large Cars</option>
+								<option class="rooms">Standard Room</option>
+								<option class="rooms">Deluxe Room</option>
+								<option class="rooms">Executive Villa</option>
+								<option class="seats">Momofuko Seiobo</option>
+								<option class="seats">Urbane</option>
+								<option class="seats">Attica</option>
 						</select>
 					</div>
 					<div id="destination">
 						<img src="images/bookings/location.png">
 						<!--Options will be added depending on the service chosen-->
 						<select id="destination-1">
+							<option style="display: none;"></option>
+							<option class="camp-sites">Uluru/Ayers Rock Camp</option>
+							<option class="camp-sites">Alice Springs Camp</option>
+							<option class="camp-sites">Kimberley Camp</option>
+							<option class="location">Melbourne</option>
+							<option class="location">Sydney</option>
+							<option class="location">Brisbane</option>
 						</select>
 						<select id="destination-2">
+							<option style="display: none;"></option>
+							<option>Melbourne</option>
+							<option>Sydney</option>
+							<option>Brisbane</option>
 						</select>
 					</div>
 					<div id="calendar">
@@ -104,7 +125,7 @@
 					<!--Number of rooms; Number of seats; Number of tents-->
 						<img id="lastfield-icon" src="">
 						<span id="input-suffix"></span>
-						<input type="number" min="1" max="99">
+						<input type="number" min="1" max="99" value="0">
 					</div>
                     <input type="submit" class="submit-button" onclick="popup1()">
 				</form>
